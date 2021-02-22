@@ -18,6 +18,7 @@
       "prefix": "app",
       "architect": {
         "build": {
+          "allowedCommonJsDependencies":["chart.js"],
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
             "outputPath": "dist/graficasApp",
