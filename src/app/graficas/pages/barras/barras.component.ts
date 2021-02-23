@@ -26,9 +26,9 @@ export class BarrasComponent implements OnInit {
   public barChartLegend = true;
 
   public barChartData: ChartDataSets[] = [
-    { data: [65, 59, 80, 81, 56, 55, 40], label: 'Series A',backgroundColor:'#5406A1' },
-    { data: [28, 48, 40, 19, 86, 27, 90], label: 'Series B',backgroundColor:'#81FD8A' },
-    { data: [2, 9, 20, 20, 8, 27, 90], label: 'Series C', backgroundColor: '#FF1009' },
+    { data: [65, 59, 80, 81, 56, 55, 40], label: 'Series A', backgroundColor: 'purple', hoverBackgroundColor: 'purple' },
+    { data: [28, 48, 40, 19, 86, 27, 90], label: 'Series B', backgroundColor: 'green', hoverBackgroundColor: 'green' },
+    { data: [2, 9, 20, 20, 8, 27, 90], label: 'Series C', backgroundColor: 'red', hoverBackgroundColor: 'red' },
 
   ];
 
@@ -49,32 +49,32 @@ export class BarrasComponent implements OnInit {
   public randomize(): void {
     // Only Change 3 values
     this.barChartData[0].data = [
-      Math.round(Math.random()*100),
-      Math.round(Math.random()*100),
-      Math.round(Math.random()*100),
-      Math.round(Math.random()*100),
-      Math.round(Math.random()*100),
-      Math.round(Math.random()*100),
-      Math.round(Math.random()*100),
-   ];
-   this.barChartData[1].data = [
-    Math.round(Math.random()*100),
-    Math.round(Math.random()*100),
-    Math.round(Math.random()*100),
-    Math.round(Math.random()*100),
-    Math.round(Math.random()*100),
-    Math.round(Math.random()*100),
-    Math.round(Math.random()*100),
- ];
- this.barChartData[2].data = [
-  Math.round(Math.random()*100),
-  Math.round(Math.random()*100),
-  Math.round(Math.random()*100),
-  Math.round(Math.random()*100),
-  Math.round(Math.random()*100),
-  Math.round(Math.random()*100),
-  Math.round(Math.random()*100),
-];
+      Math.round(Math.random() * 100),
+      Math.round(Math.random() * 100),
+      Math.round(Math.random() * 100),
+      Math.round(Math.random() * 100),
+      Math.round(Math.random() * 100),
+      Math.round(Math.random() * 100),
+      Math.round(Math.random() * 100),
+    ];
+    this.barChartData[1].data = [
+      Math.round(Math.random() * 100),
+      Math.round(Math.random() * 100),
+      Math.round(Math.random() * 100),
+      Math.round(Math.random() * 100),
+      Math.round(Math.random() * 100),
+      Math.round(Math.random() * 100),
+      Math.round(Math.random() * 100),
+    ];
+    this.barChartData[2].data = [
+      Math.round(Math.random() * 100),
+      Math.round(Math.random() * 100),
+      Math.round(Math.random() * 100),
+      Math.round(Math.random() * 100),
+      Math.round(Math.random() * 100),
+      Math.round(Math.random() * 100),
+      Math.round(Math.random() * 100),
+    ];
   }
 
 }
