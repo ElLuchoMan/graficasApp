@@ -1,4 +1,5 @@
 import { NgModule } from '@angular/core';
+import{HttpClientModule}from '@angular/common/http'
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
@@ -13,6 +14,7 @@ import { MenuComponent } from './shared/menu/menu.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
+    HttpClientModule,
   
   ],
   providers: [],
